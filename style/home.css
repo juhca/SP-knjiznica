@@ -119,7 +119,7 @@ LOGIN - REGISTER
 }
 
 .loginINPUT, .signUpINPUT {
-	flex: 1;
+/*	flex: 1;*/
     background: #eacda3; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #eacda3 , #d6ae7b); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #eacda3 , #d6ae7b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -130,4 +130,12 @@ LOGIN - REGISTER
     border: 3px solid #73AD21;
     padding: 10px;
     display: inline-block;
+}
+
+.tabela {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 13%;
+	width: auto; 
+	text-align: center;
 }
