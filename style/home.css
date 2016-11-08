@@ -93,27 +93,6 @@
 }
 
 /*
-STIL ZA SLIKO S Z GUMBI
-*/
-
-.imagewrap {
-	display:inline-block;
-	position:relative;
-}
-
-.login2 {
-	position:absolute;
-	bottom:10%;
-	margin-left: -15%;
-}
-.signUp2 {
-	position:absolute;
-	bottom:10%;
-	margin-left: 0%;
-}
-
-
-/*
 	===================================================================================================================
 													LOGIN.HTML
 	===================================================================================================================
