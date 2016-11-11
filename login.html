@@ -2,20 +2,27 @@
 <html>
     <head>
         <title>Genovefina knjiznica</title>
-        <link rel="stylesheet" type="text/css" href="./style/home.css">
         <meta http-equive="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="./style/home.css">
+        <link rel="stylesheet" type="text/css" href="./style/responsive.css">
+        <script type="text/javascript" src="./scripts/login.js"></script>
     </head>
 </html>
 
 <body class="body" align="center">
-        <!-- GLAVA -->
-    <div class="header" align="center">
+       <!-- GLAVA -->
+    <header id="headerZasebnost">
+        <ul class="topnav" id="myTopnav">
+            <li><a href="./index.html">Domov</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./index.html">O nas</a></li>
+            <li><a href="./index.html">FAQ</a></li>
+            <li class="icon">
+                <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+            </li>
+        </ul>
         <h1 id="Glava">Genovefina knjižnica</h1>
-    </div>
-        <!-- GUMB ZA DOMOV -->
-    <p align="center">
-        <a href="./index.html" class="login3">DOMOV</a>    
-    </p>
+    </header>
         <!-- OKVIR ZA TABELO -->
     <div class="okvir">
             <!-- TABELA -->
@@ -29,28 +36,28 @@
             
             <tr>
                 <td style="width:250px">
-                    <form>
+                    <div>
                       Username:<br>
-                      <input type="text" name="firstname"><br>
+                      <input type="text" id="LOGINUpIme"><br>
                       Password:<br>
-                      <input type="password" name="lastname"><br>
+                      <input type="password" id="LOGINGeslo"><br>
                       <br>
-                      <input type="submit" value="Login"/>
-                    </form>
+                      <button onclick="prijava()">Login</button>
+                    </div>
                 </td>
                     <!-- STOLPEC S SEPARATORJEM -->
                 <td style="width:250px; border-left: 1px solid black;">
-                    <form>
+                    <div>
                         <br>Username:<br>
-                        <input type="text" name="firstname"><br>
+                        <input type="text" id="REGISTERUpIme"><br>
                         Password:<br>
-                        <input type="password" name="lastname"><br>
+                        <input type="password" id="REGISTERPass1"><br>
                         Re-enter password:<br>
-                        <input type="password" name="lastname"><br>
+                        <input type="password" id="REGISTERPass2"><br>
                         <br>
-                        <input type="submit" value="Register"/><br>
+                        <button onclick="registriraj()">Register</button><br>
                         <br>
-                    </form>
+                    </div>
                 </td>
                 
             </tr>

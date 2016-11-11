@@ -89,7 +89,7 @@
 	top:1px;
 }
 .login2:active, .signUp2:active {
-	position:absolute;
+	position:relative;
 }
 
 /*
@@ -144,3 +144,8 @@
    color: #fb3f00;
    text-decoration: none;
 }
+
+/*
+**
+*/
+
