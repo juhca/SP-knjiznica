@@ -2,10 +2,10 @@ var databaseUporabnikov = [ ["admin", "admin"], ["juhca", "nopass"]];
     
 function prijava()
 {
-    upIme = document.getElementById("LOGINUpIme").value;
-    geslo = document.getElementById("LOGINGeslo").value;
+    var upIme = document.getElementById("LOGINUpIme").value;
+    var geslo = document.getElementById("LOGINGeslo").value;
    
-    nasel = 0;
+    var nasel = 0;
    
     for (var i = 0; i < databaseUporabnikov.length; i++)
     {
@@ -25,15 +25,15 @@ function prijava()
 
 function registriraj()
 {
-    upIme = document.getElementById("REGISTERUpIme").value;
-    geslo1 = document.getElementById("REGISTERPass1").value;
-    geslo2= document.getElementById("REGISTERPass2").value;
+    var upIme = document.getElementById("REGISTERUpIme").value;
+    var geslo1 = document.getElementById("REGISTERPass1").value;
+    var geslo2= document.getElementById("REGISTERPass2").value;
     
-    nasel = 0;
+    var nasel = 0;
     
     for (var i = 0; i < databaseUporabnikov.length; i++)
     {
-        if(upIme == databaseUporabnikov[i][0] && geslo == databaseUporabnikov[i][1])
+        if(upIme == databaseUporabnikov[i][0])
         {
             nasel = 1;
             alert("Uporabnik že obstaja");
