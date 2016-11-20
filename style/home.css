@@ -1,5 +1,7 @@
 html{
 	background-color: #eaf0f2;
+	height: 100%;
+	width: 100%;
 }
 
 body{
@@ -11,6 +13,8 @@ body{
 	linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
 	linear-gradient(#eee .1em, transparent .1em);
 	background-size: 100% 1.2em;
+	height: 100%;
+	width: 100%;
 }
 
 .header-user-dropdown {
@@ -32,11 +36,12 @@ body{
 
 .header-user-dropdown .header-limiter h1{
 	float: left;
-	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	font: normal 28px Arial, Helvetica, sans-serif;
 	line-height: 40px;
-	margin:0;
+	margin: 0;
 }
-
+	
+	/* 	DOLOCIM BARVO DRUGE BESEDE 	*/
 .header-user-dropdown .header-limiter h1 span {
 	color: #bc40df;
 }
@@ -236,44 +241,33 @@ body{
 **/
 
 .pageBody {
-	text-align: center;
-	width: 100%;
-	height: 100%;
 	display: table;
-}
-div > div {
-	display: table-cell;
+	width: 100%;
+	min-height: 25%;
+	text-align: center;
 }
 
 .GlavnaLevi {
-	background-color:#292c2f;
-	width: 15%;
-	
+	display: table-cell;
+	width: 10%;
+	background-color: #292c2f;
 }
 
 .GlavnaSrednji {
+	display: table-cell;
 	width: 70%;
-	background: #cba;
 }
 
 .GlavnaDesni {
-	width: 15%;
-	background: #ca8;
+	display: table-cell;
+	width: 20%;
+	background-color: #292c2f;
 }
 
-.Glavna-srednji-glaven {
-	display: block;
-	position: relative;
-	min-height: 100px;
-	left: 5%;
-	padding-bottom: 2%;
-	width: 90%;
-	float: top;
-	background: red;
-}
+	/* ZA TELO GLAVNE STRANI */
 
+	/* ZA SEARCH BAR */
 input[type=text] {
-	
 	width: 50%;
     box-sizing: border-box;
     border: 2px solid #ccc;
@@ -286,5 +280,34 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    width: 95%;
+    width: 90%;
+}
+	/* ZA OSREDNJI DEL GLAVNE STRANI */
+	
+.Glavna-srednji-glaven {
+	display: table;
+	width: 50%;
+	height: 100px;
+	margin-top: 1%;
+	margin-bottom: 2%;
+	margin-left: 25%;
+	border: 2px solid black;
+}
+
+.Glavna-knjiga-slika {
+	display: table-cell;
+	width: 50%;
+	height: 100%;
+	background-image: url("../img/knjige_11.jpg");
+	background-size: 100%;
+}
+
+.Glavna-knjiga-kratekOpis {
+	display: table-cell;
+	width: 50%;	
+	height: 100%;
+}
+
+.gumbIzposoja {
+	top: 5%;
 }
