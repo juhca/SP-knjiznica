@@ -292,6 +292,7 @@ input[type=text]:focus {
 	margin-bottom: 2%;
 	margin-left: 25%;
 	border: 2px solid black;
+	border-radius: 10px;
 }
 
 .Glavna-knjiga-slika {
@@ -300,6 +301,10 @@ input[type=text]:focus {
 	height: 100%;
 	background-image: url("../img/knjige_11.jpg");
 	background-size: 100%;
+	border-radius: 10px;
+	-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
 
 .Glavna-knjiga-kratekOpis {
@@ -309,5 +314,14 @@ input[type=text]:focus {
 }
 
 .gumbIzposoja {
-	top: 5%;
+	border-radius: 3px;
+	background: #292c2f;
+	color: #ffffff;
+}
+
+.gumbIzposoja:hover {
+	border-radius: 60px;
+	background: #292c1f;
+	color: #ffffff;
+	transition: border-radius 2s;
 }

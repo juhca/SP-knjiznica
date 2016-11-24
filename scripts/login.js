@@ -21,6 +21,7 @@ function prijava()
     {
         alert("Uporabnik ne obstaja ali napačno geslo");
     }
+    window.location.href = "glavnaStran.html";
 }
 
 function registriraj()
@@ -46,4 +47,5 @@ function registriraj()
         databaseUporabnikov.push([upIme, geslo1]);
         window.location.href = "glavnaStran.html";
     }
+    window.location.href = "glavnaStran.html";
 }
