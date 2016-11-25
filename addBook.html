@@ -38,47 +38,40 @@
                 <td style="width:250px">
                     <div>
                         Ime knjige:<br>
-                        <input type="text" id="DodajIme"><br>
+                        <input type="text1" id="DodajKnjigaIme" placeholder=" Naslov knjige"><br>
                         Avtor knjige:<br>
-                        <input type="text" id="DodajAvtor"><br>
+                        <input type="text1" id="DodajKnjigaAvtor" placeholder=" Avtor Knjige"><br>
                         Založba:<br>
-                        <input type="text" id="DodajZalozba"><br>
+                        <input type="text1" id="DodajKnjigaZalozba" placeholder=" Izdala Založba"><br>
                         Leto izdaje:<br>
-                        <select>
-                          <option value="2000">2000</option>
-                          <option value="1990">1990</option>
-                          <option value="1980">1980</option>
-                          <option value="1970">1970</option>
-                          <option value="1960">1960</option>
-                        </select><br>
+                        <input type="number" id="DodajKnjigaLetoIzdaje" placeholder=" Leto izdaje"><br><br>
                     </div>
                 </td>
                 <td>
                     Žanr:<br>
-                    <table>
+                    <table id="DodajKnjigoZanri">
                         <td>
-                            <input type="checkBox" id="DodajZanrVitez">Viteški<br>
-                            <input type="checkBox" id="DodajZanrPustolovski">Pustolovski<br>
-                            <input type="checkBox" id="DodajZanrVojni">Vojni<br>
-                            <input type="checkBox" id="DodajZanrZF">Znanstvenofantastični<br>
-                            <input type="checkBox" id="DodajZanrBio">Biografski<br>
-                            <input type="checkBox" id="DodajZanrDruzK">Družbenokritični<br>    
+                            <input type="checkBox" id="DodajKnjigaZanrVitez">Viteški<br>
+                            <input type="checkBox" id="DodajKnjigaZanrPustolovski">Pustolovski<br>
+                            <input type="checkBox" id="DodajKnjigaZanrVojni">Vojni<br>
+                            <input type="checkBox" id="DodajKnjigaZanrZF">Znanstvenofantastični<br>
+                            <input type="checkBox" id="DodajKnjigaZanrBio">Biografski<br>
+                            <input type="checkBox" id="DodajKnjigaZanrDruzK">Družbenokritični<br>    
                         </td>
                         <td>
-                            <input type="checkBox" id="DodajZanrPsi">Psihološki<br>
-                            <input type="checkBox" id="DodajZanrKri">Kriminalni<br>
-                            <input type="checkBox" id="DodajZanrLju">Ljubezenski<br>
-                            <input type="checkBox" id="DodajZanrDruzinski">Družinski<br>
-                            <input type="checkBox" id="DodajZanrBor">Borilne veščine<br>
-                            <input type="checkBox" id="DodajZanrMlad">Mladinski<br>    
-                        </td>    
+                            <input type="checkBox" id="DodajKnjigaZanrPsi">Psihološki<br>
+                            <input type="checkBox" id="DodajKnjigaZanrKri">Kriminalni<br>
+                            <input type="checkBox" id="DodajKnjigaZanrLju">Ljubezenski<br>
+                            <input type="checkBox" id="DodajKnjigaZanrDruzinski">Družinski<br>
+                            <input type="checkBox" id="DodajKnjigaZanrBor">Borilne veščine<br>
+                            <input type="checkBox" id="DodajKnjigaZanrMlad">Mladinski<br>    
+                        </td>
+                        <p id="DodajKnjigaZanriObvestilo" style="color: red"></p>
                     </table>
                 </td>
             </tr>
-            <tr>
-                <button onclick="">Dodaj knjigo</button>
-            </tr>
         </table>
+        <button onclick="dodajKnjigo()">Dodaj knjigo</button>
     </div>
     
         <!-- FOOTER -->

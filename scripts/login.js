@@ -1,5 +1,5 @@
 var databaseUporabnikov = [ ["admin", "admin", "admin@email.si"], ["juhca", "nopass", "juhca@gmail.com"]];
-var vpisan_uporabnik = [];
+var vpisan_uporabnik = ["uporabnik"];
     
 function prijava()
 {
@@ -22,9 +22,9 @@ function prijava()
     if(nasel == 0)
     {
         document.getElementById('LOGINUpIme').style.borderColor = 'red';
-        document.getElementById('LOGINUpIme').placeholder = 'Vnesi uporabniško ime';
+        document.getElementById('LOGINUpIme').placeholder = ' Vnesi uporabniško ime';
         document.getElementById('LOGINGeslo').style.borderColor = 'red';
-        document.getElementById('LOGINGeslo').placeholder = 'Vnesi geslo';
+        document.getElementById('LOGINGeslo').placeholder = ' Vnesi geslo';
         document.getElementById("loginObvestilo2").innerHTML = "Napačno vneseno Uporabniško ime ali geslo!";
         document.getElementById("LOGINUpIme").value = "";
         document.getElementById("LOGINGeslo").value = "";
@@ -43,14 +43,14 @@ function registriraj()
     if(upIme.length == 0)
     {
         document.getElementById('REGISTERUpIme').style.borderColor = 'red';
-        document.getElementById('REGISTERUpIme').placeholder = 'Vnesi uporabniško ime';
+        document.getElementById('REGISTERUpIme').placeholder = ' Vnesi uporabniško ime';
         vsota--;
     }
     
     if(geslo1.length == 0)
     {
         document.getElementById('REGISTERPass1').style.borderColor = 'red';
-        document.getElementById('REGISTERPass1').placeholder = 'Vnesi geslo';
+        document.getElementById('REGISTERPass1').placeholder = ' Vnesi geslo';
         vsota--;
         
     }
@@ -58,7 +58,7 @@ function registriraj()
     if(geslo2.length == 0)
     {
         document.getElementById('REGISTERPass2').style.borderColor = 'red';
-        document.getElementById('REGISTERPass2').placeholder = 'Ponovno vnesi geslo';
+        document.getElementById('REGISTERPass2').placeholder = ' Ponovno vnesi geslo';
         vsota--;
     }
     
@@ -67,11 +67,11 @@ function registriraj()
     if(email.length == 0 || n < 0)
     {
         document.getElementById('REGISTEREmail').style.borderColor = 'red';
-        document.getElementById('REGISTEREmail').placeholder = 'Vnesi email';
+        document.getElementById('REGISTEREmail').placeholder = ' Vnesi email';
         if(n < 0)
         {
             document.getElementById('REGISTEREmail').value = "";
-            document.getElementById('REGISTEREmail').placeholder = 'Pravilno vnesi email';
+            document.getElementById('REGISTEREmail').placeholder = ' Pravilno vnesi email';
         }
         vsota--;
     }
@@ -87,7 +87,7 @@ function registriraj()
                 if(upIme == databaseUporabnikov[i][0])
                 {
                     nasel = 1;
-                    alert("Uporabnik že obstaja");
+                    document.getElementById("loginObvestilo").innerHTML = "Uporabnik ze obstaja";
                     break;
                 }
             }
