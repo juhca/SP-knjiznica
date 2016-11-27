@@ -1,15 +1,23 @@
 # SP-knjiznica
 
-# OPIS
+# OPIS APLIKACIJE
 
-  Genovefa ima doma kar precej veliko in zanimivo zbirko knjig. Kljub pojavu raznoraznih elektronskih bralnikov pa meni, da je ima papir še vedno svoj čar, pa pod mizo lažje podložiš knjigo kot pa Kindle. Genovefino zbirko knjig cenijo tudi njeni prijatelji, saj na ta način pridejo do prodajnih uspešnic prej kot v knjižnici. Žal pa si Genovefa bistveno bolje zapomni vsebino knjig kot pa osebo, ki si je neko knjigo izposodila.
+Uporabnik (admin, registriran uporabnik) bo lahko dostopal do strani, pogledal katere knjige so na voljo. Le-te bo pa lahko si izposodil/rezerviral.
+Admin lahko še dodaja nove knjige.
+Kdorkoli lahko pogleda tudi zgodovino izposojanj.
 
-  Pomagajte ji iz zagate s spletno aplikacijo, ki bo še najbolj spominjala na knjižnico. Aplikacija naj omogoča vnos nove knjige (vsaka knjiga naj pri vnosu dobi svojo unikatno številko), lahko celo omogočite izpis nalepke oz. kartončka za posamezno knjigo.
+# CILJNA PUBLIKA
 
-  Poleg tega naj aplikacija omogoča tudi beleženje evidence o izposoji (torej, kdo si je izposodil katero knjigo in kdaj). Zgodovina izposoj za posamezno knjigo naj se ohranja.
+Vsi ki znajo vsaj brati in ne želijo uporabljati Cobbisa in se bojijo poklicati v knjižnico.
 
-  Genovefinim prijateljem pa omogočite iskanje po njeni zbirki knjig in pregled statusov (ali je posamezna knjiga izposojena ali ne).
+# TEŽAVE V BRSKALNIKH
 
-  Aplikacija naj ponuja tudi izpis različnih statistik (kdo si največkrat izposodi knjigo, kdo ima trenutno največ izposojenih knjig, ...).
+Težav nisem opazil, toda opazil sem razlike v izgledu določenih elementov (gumbi, obrob, senc, etc.)
 
-  Aplikacija naj bo napisana tako, da bo omogočala tudi izposojo drugih reči (npr. CD-jev, orodja, ...)
+# PONOSNOST
+
+Največ truda sem vložil v GlavnoStran in nanjo sem najbolj ponosen, čeprav zgleda preprosta sem izgubil veliko las ob izgrandnji.
+
+# KOMENTARJI IN TEŽAVE
+
+Najbolj težav mi je povzročal css, ni se vse izšlo kot sem se zamislil. Slabo sem se lotil postavljanja temeljev, ampak vse težave sem zadovoljivo rešil.
