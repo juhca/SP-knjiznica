@@ -67,3 +67,10 @@ function prestejZanre() {
     if (document.getElementById("DodajKnjigaZanrMlad").checked == true) stevec ++;
     return stevec;
 }
+
+function poisiciKnjigo() {
+    //var iskano1 = document.getElementById('search').value;
+    alert("LA");
+    window.location.href = "iskano.html";
+    return false;
+}

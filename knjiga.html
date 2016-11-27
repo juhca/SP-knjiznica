@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <title>Genovefina knjiznica - Glavna Stran</title>
+        <title>Genovefina knjiznica - Knjiga</title>
         <meta http-equive="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="./style/home.css">
@@ -50,28 +50,27 @@
 		
 		
 		<div class="GlavnaSrednji">
-			<div class="Glavna-srednji-glaven">
-				<div class="Glavna-knjiga-slika">
-					<br><br><br>
-						<button class="gumbIzposoja">IZPOSOJA</button>
-				</div>
-				<div class="Glavna-knjiga-kratekOpis">
-					<a class="Glavna-naslov-knjige">Naslov knjige:</a><br>
-					<a class="glavna-naslov">TRALALA</a><br>
-					<a class="Glavna-avtor-knjige">Avtor:</a>
-					<a class="glavna-avtor">Hopsasa</a>
+			<div class="Knjiga-srednji-glaven">
+				<div class="Knjiga-knjiga-slika"></div>
+				<div class="Knjiga-knjiga-kratekOpis">
+					<a class="Knjiga-naslov-knjige">Naslov knjige:</a><br>
+					<a class="Knjiga-naslov">TRALALA</a><br>
+					<a class="Knjiga-avtor-knjige">Avtor:</a>
+					<a class="Knjiga-avtor">Hopsasa</a>
 				</div>
 			</div>
-			<div class="Glavna-srednji-glaven">
-				<div class="Glavna-knjiga-slika">
-					<br><br><br>
-						<button class="gumbIzposoja">REZERVACIJA</button>
-				</div>
-				<div class="Glavna-knjiga-kratekOpis">
-					<a class="Glavna-naslov-knjige">Naslov knjige:</a><br>
-					<a class="glavna-naslov">TRALALA2</a><br>
-					<a class="Glavna-avtor-knjige">Avtor:</a>
-					<a class="glavna-avtor">Hopsasa2</a>
+			<div class="Knjiga-O-Knjigi">
+				<div class="Knjiga-Rating">
+					<textarea class="Knjiga-Moj-Komentar" rows="4" cols="45"> Fantastična knjiga. PRIPOROČAM!</textarea><br>
+					<fieldset class="rating">
+					    <legend>Moja ocena:</legend>
+					    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!">5 stars</label>
+					    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+					    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+					    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+					    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+					</fieldset><br>
+					<button class="gumbIzposoja">Shrani komentar in oceno</button><br><br>
 				</div>
 			</div>
 		</div>
@@ -82,7 +81,7 @@
 					<br>
 					<form>
 			  			<input type="text" id="search" maxlength="40" placeholder=" Najdi ..."><br>
-			  			<button onclick="return poisiciKnjigo()" style="margin-top:2%;">Najdi</button>
+			  			<button onclick="poisiciKnjigo()" style="margin-top:2%;">Najdi</button>
 					</form>
 				</div>
 			</nav>
