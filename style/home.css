@@ -327,6 +327,14 @@ body{
 	transition: border-radius 2s;
 }
 
+
+.okvir2 {
+	text-align: left;
+	margin: auto;
+	padding-bottom: 1%;
+	position: relative;
+}
+
 .iskano {
 	width: 20%;
 	height: 20%;
